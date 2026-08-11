@@ -2,9 +2,11 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Details from "./pages/Details";
 import Compare from "./pages/Compare";
+
 
 function App() {
   const [search, setSearch] = useState("");
@@ -39,7 +41,7 @@ function App() {
   element={<Compare />}
 />
       </Routes>
-   
+   <Footer />
     </div>
   );
 }
