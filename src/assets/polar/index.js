@@ -26,7 +26,7 @@ import sennheiserE914Polar from "./sennheiser-e914-polar.png";
 
 import sennheiserMd421Polar from "./sennheiser-md421-polar.jpeg";
 
-import sennheiserMe66Polar from "./sennheiser-me66-polar.png";
+import sennheiserMe66Polar from "./Sennheiser-me66-polar.png";
 
 import sennheiserE902Polar from "./sennheiser-e902-polar.png";
 
