@@ -2,12 +2,14 @@ import {
   shureSm57Frequency,
   shureSm7BFrequency,
   shureSm87AFrequency,
+  shureSm58Frequency,
 } from "../../assets/frequency";
 
 import {
   shureSm57Polar,
   shureSm7BPolar,
   shureSm87APolar,
+  shureSm58Polar,
 } from "../../assets/polar";
 
 import {
@@ -18,6 +20,7 @@ import {
   shureBeta57A,
   shureBeta58A,
   shureSuper55,
+  shureSm58,
 } from "../../assets/microphones";
 
 import {
@@ -302,6 +305,52 @@ const shure = [
 
   patronPolar: shureBeta58APolar,
   graficaRespuesta: shureBeta58AFrequency,
+},
+{
+  id: 16,
+  slug: "shure-sm58",
+
+  marca: "Shure",
+  modelo: "SM58",
+
+  descripcion:
+    "El Shure SM58 es un micrófono dinámico cardioide diseñado principalmente para aplicaciones vocales en directo. Su construcción robusta, respuesta vocal equilibrada y capacidad para rechazar el sonido fuera del eje lo han convertido en uno de los micrófonos más utilizados para voz.",
+
+  tipo: "Dinámico",
+  diafragma: "Pequeño",
+  patron: "Cardioide",
+
+  rangoFrecuencia: "50 Hz – 15 kHz",
+  sensibilidad: "1.85 mV/Pa",
+  impedanciaSalida: "150 Ω",
+  splMaximo: ">150 dB SPL",
+  phantom: "No",
+
+  aplicaciones: [
+    "Voz en vivo",
+    "Coros",
+    "Presentaciones",
+    "Conferencias",
+    "Locución"
+  ],
+
+  ventajas: [
+    "Excelente para voces",
+    "Gran rechazo del sonido fuera del eje",
+    "Muy resistente",
+    "Reduce el ruido de manipulación",
+    "Respuesta vocal equilibrada"
+  ],
+
+  desventajas: [
+    "Respuesta en frecuencia limitada frente a micrófonos de condensador",
+    "Menor detalle en altas frecuencias",
+    "No es la opción ideal para grabaciones que requieren máxima precisión"
+  ],
+
+  imagen: shureSm58,
+  patronPolar: shureSm58Polar,
+  graficaRespuesta: shureSm58Frequency,
 },
 ];
 

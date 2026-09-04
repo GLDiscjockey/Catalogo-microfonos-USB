@@ -6,6 +6,8 @@ import {
   sennheiserE906Frequency,
   sennheiserE914Frequency,
   sennheiserMd421Frequency,
+  sennheiserMe66Frequency,
+  sennheiserE902Frequency,   
 } from "../../assets/frequency";
 
 import {
@@ -16,6 +18,8 @@ import {
   sennheiserE906Polar,
   sennheiserE914Polar,
   sennheiserMd421Polar,
+  sennheiserMe66Polar,
+  sennheiserE902Polar,
 } from "../../assets/polar";
 import {
   sennheiserE614,
@@ -25,6 +29,8 @@ import {
   sennheiserE906,
   sennheiserE914,
   sennheiserMd421,
+  sennheiserMe66,
+  sennheiserE902,
 } from "../../assets/microphones";
 
 const sennheiser = [
@@ -342,6 +348,99 @@ const sennheiser = [
 
   patronPolar: sennheiserE614Polar,
   graficaRespuesta: sennheiserE614Frequency,
+},
+{
+  id: 26,
+  slug: "sennheiser-me66",
+  marca: "Sennheiser",
+  modelo: "ME 66",
+
+  descripcion:
+    "Módulo de micrófono shotgun corto diseñado para utilizarse con los módulos de alimentación Sennheiser K6 y K6P. Su alta directividad permite captar fuentes sonoras a distancia mientras reduce el sonido proveniente de los laterales, siendo especialmente útil en producciones audiovisuales, entrevistas y grabaciones en exteriores.",
+
+  tipo: "Condensador",
+  diafragma: "Pequeño",
+  patron: "Supercardioide",
+
+  rangoFrecuencia: "40 Hz – 20 kHz",
+  sensibilidad: "50 mV/Pa",
+  impedanciaSalida: "200 Ω",
+  splMaximo: "126 dB SPL",
+  phantom: "Mediante módulo K6/K6P",
+
+  aplicaciones: [
+    "Grabación audiovisual",
+    "Cine y televisión",
+    "Entrevistas",
+    "Reportajes",
+    "Grabación en exteriores",
+    "Captación de sonido a distancia",
+  ],
+
+  ventajas: [
+    "Alta directividad",
+    "Buena sensibilidad",
+    "Adecuado para captación a distancia",
+    "Diseño compacto para un micrófono shotgun",
+    "Compatible con el sistema modular Sennheiser K6",
+  ],
+
+  desventajas: [
+    "Requiere un módulo de alimentación K6 o K6P",
+    "No es un micrófono completo por sí solo",
+    "La alta direccionalidad exige una orientación precisa",
+  ],
+
+  imagen: sennheiserMe66,
+  graficaRespuesta: sennheiserMe66Frequency,
+  patronPolar: sennheiserMe66Polar,
+},
+
+{
+  id: 27,
+  slug: "sennheiser-e902",
+
+  marca: "Sennheiser",
+  modelo: "e 902",
+
+  descripcion:
+    "El Sennheiser e 902 es un micrófono dinámico cardioide diseñado especialmente para bombo y otras fuentes de baja frecuencia. Su respuesta y construcción permiten soportar altos niveles de presión sonora y obtener una captación definida y potente en instrumentos de percusión.",
+
+  tipo: "Dinámico",
+  diafragma: "Grande",
+  patron: "Cardioide",
+
+  rangoFrecuencia: "20 Hz – 18 kHz",
+  sensibilidad: "0.2 mV/Pa",
+  impedanciaSalida: "350 Ω",
+  splMaximo: ">160 dB SPL",
+  phantom: "No",
+
+  aplicaciones: [
+    "Bombo",
+    "Tom de piso",
+    "Percusión",
+    "Amplificadores de bajo",
+    "Fuentes de baja frecuencia",
+  ],
+
+  ventajas: [
+    "Excelente para bombo",
+    "Respuesta optimizada para bajas frecuencias",
+    "Soporta altos niveles de presión sonora",
+    "Patrón cardioide con buen rechazo lateral",
+    "Construcción robusta",
+  ],
+
+  desventajas: [
+    "Diseñado principalmente para fuentes de baja frecuencia",
+    "Menor versatilidad que un micrófono de propósito general",
+    "Su respuesta está orientada principalmente a aplicaciones de percusión",
+  ],
+
+  imagen: sennheiserE902,
+  patronPolar: sennheiserE902Polar,
+  graficaRespuesta: sennheiserE902Frequency,
 },
 ];
 
